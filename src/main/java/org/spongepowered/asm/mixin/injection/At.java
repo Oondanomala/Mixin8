@@ -238,10 +238,6 @@ public @interface At {
      * also allow other injectors to act upon constructors, though care should
      * be taken to ensure that the target is properly specified and attention is
      * paid to the structure of the target bytecode.</p>
-     *
-     * <strong>FABRIC CHANGE</strong>: true by default.
-     *
      */
-    public boolean unsafe() default true;
-    
+    public boolean unsafe() default false;
 }
