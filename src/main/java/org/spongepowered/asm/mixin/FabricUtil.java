@@ -92,7 +92,8 @@ public final class FabricUtil {
     }
 
     public static int getCompatibility(IMixinConfig config) {
-        return getDecoration(config, KEY_COMPATIBILITY, COMPATIBILITY_LATEST);
+        // TODO: Add a way for mods to specify a higher compatibility version
+        return getDecoration(config, KEY_COMPATIBILITY, COMPATIBILITY_0_9_2);
     }
 
     private static IMixinConfig getConfig(ISelectorContext context) {
